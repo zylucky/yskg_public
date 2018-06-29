@@ -149,7 +149,7 @@
 		        floors:0, //总楼层
 		        locat_floor:0, //所在楼层
 		        fjzt: "", 
-						topic:'',//楼盘
+				topic:'',//楼盘
 		        house_image: [],
 		        name: "",
 		        phone: "",
@@ -200,15 +200,12 @@
 			              _this.room_area = !data.fjmj ? '暂无数据' : data.fjmj + '㎡';
 			              _this.workstation = data.krgw || '暂无数据';
 			              _this.floors = data.zglc || '暂无数据';
-			
 			             /* _this.wyf = !data.wyf ? '暂无数据' : data.wyf + '元/㎡/月';*/
 			              if(result.data.wyf == 0){
 			                  _this.wyf = '已包含';
 			              }else{
 			                  _this.wyf = !result.data.wyf ? '暂无数据' : result.data.wyf + '元/㎡/月'; //物业费
 			              }
-			
-			
 			              _this.wygs = data.wygs || '暂无数据';
 			              /*_this.fjcg = data.fjcg + "m" || '暂无数据';*/
 			              _this.fjcg = !data.fjcg ? '暂无数据' : data.fjcg + "m";
