@@ -281,7 +281,7 @@
 		      fx_send(){
 		      	wx.ready(()=>{
 					wx.onMenuShareAppMessage({
-					    title: this.topic + '  ' + this.zdh + this.fybh, // 分享标题
+					    title: this.topic + '  ' + this.zdh +'-'+ this.fybh, // 分享标题
 					    desc: "面积："+this.room_area + '     ' + "月租金："+ this.monthly_price, // 分享描述
 					    link: 'http://omc.urskongjian.com/yskg_public/#/?hourse_id=' + this.hourse_id,
 					    imgUrl: 'http://omc.urskongjian.com:81/yskjapp/shi_ion.png', // 分享图标
