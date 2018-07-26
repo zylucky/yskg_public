@@ -10,8 +10,12 @@ require('swiper/dist/css/swiper.css')
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
 // 生产环境
-Vue.prototype.$prefix = "http://47.92.145.21:81"//图片前缀
-Vue.prototype.$api = "http://omc.urskongjian.com" //api地址
+// Vue.prototype.$prefix = "http://47.92.145.21:81"//图片前缀
+// Vue.prototype.$api = "http://omc.urskongjian.com" //api地址
+
+// 新的生产环境
+Vue.prototype.$prefix = "http://47.92.6.78:81"//图片前缀
+Vue.prototype.$api = "http://47.92.6.78" //api地址
 
 //测试ip
 //Vue.prototype.$prefix = "http://116.62.68.26:80" //图片前缀
