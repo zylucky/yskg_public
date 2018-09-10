@@ -283,8 +283,8 @@
 					wx.onMenuShareAppMessage({
 					    title: this.topic + '  ' + this.zdh +'-'+ this.fybh, // 分享标题
 					    desc: "面积："+this.room_area + '     ' + "月租金："+ this.monthly_price, // 分享描述
-					    link: 'http://47.92.6.78/yskg_public/#/?hourse_id=' + this.hourse_id,
-					    imgUrl: 'http://47.92.6.78:81/yskjapp/shi_ion.png', // 分享图标
+					    link: 'http://omc.urskongjian.com/yskg_public/#/?hourse_id=' + this.hourse_id,
+					    imgUrl: 'http://omc.urskongjian.com:81/yskjapp/shi_ion.png', // 分享图标
 					    type: 'link', // 分享类型,music、video或link，不填默认为link
 					    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
 					    success: function () { 
@@ -298,8 +298,8 @@
 							
 					wx.onMenuShareTimeline({
 					    title: this.topic + '  ' + this.zdh +'  '+ this.fybh, // 分享标题
-					    link: 'http://47.92.6.78/yskg_public/#/?hourse_id=' + this.hourse_id, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-					    imgUrl: 'http://47.92.6.78:81/yskjapp/shi_ion.png', // 分享图标
+					    link: 'http://omc.urskongjian.com/yskg_public/#/?hourse_id=' + this.hourse_id, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+					    imgUrl: 'http://omc.urskongjian.com:81/yskjapp/shi_ion.png', // 分享图标
 					    success: function () { 
 
 					    },
