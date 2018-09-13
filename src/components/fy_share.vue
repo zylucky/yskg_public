@@ -98,6 +98,13 @@
 			</div>
 			<div class="fgx"></div>
 			<div class="detail_h">
+				<span class="fjldcss" style="width: 100% !important;">房间亮点：</span>
+			</div>
+			<div class="detail_h">
+				<span v-text="fangjlidian" style="width: 100% !important;"></span>
+			</div>
+			<div class="fgx"></div>
+			<div class="detail_h">
 				<p style="width: 100%;">
 					<span class="detail_name">礼品等级：</span>
 					<span class="detail_xq"  v-text="lpdj" style="color: #000;"></span>
@@ -169,6 +176,7 @@
 		        lpdj: "",
 		        building_images: [],
 		        property: {"1":"写字楼", "2":"公寓","3":"商务楼","4":"住宅","5":"商业","6":"酒店","7":"综合","8":"别墅","9":"商业综合体","10":"酒店式公寓"},
+                fangjlidian:"",
 			}
 		},
 		created(){
@@ -194,6 +202,7 @@
 					if (result.success) {
 			            if (result.data) {
 			              const data = result.data[0];
+			              _this.fangjlidian = !result.data1.roomBrightSpot ? '暂无数据' : result.data1.roomBrightSpot;
 			              document.title = data.topic;
 			              _this.topic = data.topic;
 			              $('title').html(result.data.name);
