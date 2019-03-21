@@ -1,4 +1,5 @@
 'use strict'
+var webpack=require('webpack');
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
@@ -7,8 +8,6 @@ const vueLoaderConfig = require('./vue-loader.conf')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
-
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -78,5 +77,8 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+	plugins: [
+		new webpack.ProvidePlugin({$: "jquery", jQuery: "jquery", "window.jQuery": "jquery" })
+	],
 }
