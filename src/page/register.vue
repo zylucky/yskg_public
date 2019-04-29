@@ -229,7 +229,8 @@
 								"name": _this.name,
 								"phone": _this.phone,
 								"gsname": _this.com_name,
-								"saleNum":_this.invite_code
+								"saleNum":_this.invite_code,
+								"openid": ''
 							},
 							"foreEndType":2,
 							"code":"1"
@@ -245,7 +246,7 @@
 								localStorage.setItem('usernx', JSON.stringify(_this.name));
 								localStorage.setItem('loginnx', JSON.stringify(msg));
 								localStorage.setItem('cooknx', JSON.stringify(sjsd));
-								location.href = 'http://omc.urskongjian.com/wanx/#/';//跳转到公众号
+								location.href = 'http://omc.urskongjian.com/nx/#/';//跳转到公众号
 							}else{
 								Toast({
 									message: '注册失败: ' + result.message,

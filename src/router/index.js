@@ -35,5 +35,21 @@ export default new Router({
 				title:'用户注册'
 			}
 		},
+		{//幼狮推荐有礼
+			path:'/gift',
+			name:'gift',
+			component:resolve => require(['../page/gift.vue'],resolve),
+			meta:{
+				title:'推荐有礼'
+			}
+		},
+		{//幼狮推荐有礼活动规则
+			path:'/rules',
+			name:'rules',
+			component:resolve => require(['../page/rules.vue'],resolve),
+			meta:{
+				title:'活动规则'
+			}
+		},
 	]
 });
